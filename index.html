@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure Messaging</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">🎨 Switch Theme</button>
+  </div>
+
+  <div class="container">
+    <h1 class="animate-title">🔐 Secure Messaging App</h1>
+
+    <h2>🔑 Generate RSA Keys</h2>
+    <button onclick="generateRSAKeys()">Generate Keys</button>
+    <textarea id="publicKey" placeholder="Public Key"></textarea>
+    <textarea id="privateKey" placeholder="Private Key"></textarea>
+
+    <h2>✉️ Encrypt Message</h2>
+    <textarea id="message" placeholder="Enter your message"></textarea>
+    <button onclick="encryptMessage()">Encrypt</button>
+    <textarea id="encryptedMessage" placeholder="Encrypted Message"></textarea>
+    <textarea id="encryptedAESKey" placeholder="Encrypted AES Key"></textarea>
+
+    <h2>🔓 Decrypt Message</h2>
+    <button onclick="decryptMessage()">Decrypt</button>
+    <textarea id="decryptedMessage" placeholder="Decrypted Message"></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
